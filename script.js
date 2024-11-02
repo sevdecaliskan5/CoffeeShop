@@ -1,9 +1,9 @@
 const arrows = document.querySelectorAll(".menu i");
 const movieList = document.getElementById("menu-slider");
-const cards = movieList.querySelectorAll(".card");
+const cards = movieList.querySelectorAll(".col");
 const totalCards = cards.length;
 const visibleCards = 5;
-const itemWidth = 240;
+const itemWidth = 231;
 let clickCounter = 0;
 
 updateVisibleCards();
@@ -25,5 +25,8 @@ arrows.forEach((arrow) => {
 
 function updateVisibleCards() {
   const currentTranslateX = clickCounter * itemWidth;
-  movieList.style.transform = `translateX(-${currentTranslateX}px)`;
+  movieList.scrollTo({
+    left:currentTranslateX,
+    behavior:"smooth"
+  })
 }
