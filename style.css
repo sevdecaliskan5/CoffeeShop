@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Seymour+One&family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s linear;
+}
+
+body {
+  background-color: black;
+}
+
+span {
+  color: #c77c11;
+}
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+.container-fluid a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav {
+  color: white;
+}
+
+.nav-item i {
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.nav-link {
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  font-weight: 600 !important;
+  line-height: 23px;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.6s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #7c6851;
+  transform: scale(0.95);
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+.content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  background-color: #7c6851;
+  border: 1px solid #7c6851;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.content .btn:hover {
+  background-color: #7c6851;
+  border: 1px solid #7c6851;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-image: url(./imgs/backfround-1.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home .content {
+  max-width: 60rem;
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  font-family: "Seymour One", serif;
+  font-size: 48px;
+  font-weight: lighter;
+  line-height: 48px;
+}
+
+h3 {
+  font-family: "Seymour One", serif;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+p {
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-us img {
+  border-radius: 12%;
+}
+
+.about-us .btn {
+  display: inline-block;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  background-color: #c77c11;
+  border: 1px solid #c77c11;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.about-us button a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-us .btn:hover {
+  background-color: #c77c11;
+  border: 1px solid #c77c11;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.267);
+}
+
+.menu img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.menu .col {
+  flex: 0 0 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 230px !important;
+  height: 280px !important;
+  align-items: center;
+  margin: 10px;
+  transition: all 0.8s;
+  cursor: pointer;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.card:hover {
+  transform: scale(0.95);
+}
+
+.card:hover .layer img {
+  opacity: 1;
+}
+
+.card:hover .layer::after {
+  opacity: 1;
+}
+
+.layer img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s all;
+  z-index: 1;
+}
+
+.layer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.8s all;
+}
+
+.card img {
+  margin-top: 10px;
+}
+
+.menu .container {
+  overflow: hidden;
+}
+
+.menu .row {
+  position: relative;
+
+  height: 300px;
+  display: flex;
+}
+
+#menu-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(230px * 20);
+}
+
+.menu i {
+  color: white;
+  font-size: 50px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.menu .col span {
+  text-decoration: line-through;
+  color: #c77c11;
+  font-weight: 400;
+}
+
+.menu .col .btn {
+  font-size: 14px;
+  background-color: black;
+  color: #fff;
+  border-radius: 12px;
+  padding: 6px 8px;
+}
+
+.bi-chevron-right {
+  position: relative;
+  margin-right: 10px;
+}
+
+.bi-chevron-left {
+  position: relative;
+  margin-left: 10px;
+}
+
+.video {
+  position: relative;
+}
+
+.overlay-text {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  text-align: center;
+  font-family: "Creepster", system-ui;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.video:hover .overlay-text {
+  opacity: 1;
+}
+
+.heading p {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+#blog {
+  background-color: #fff;
+}
+
+.blog-text {
+  position: relative;
+  padding-right: 20px;
+}
+
+.blog-text::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100px;
+  background-color: rgb(108, 110, 113);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.col:last-child .blog-text::after {
+  content: none;
+}
+
+.blog-heading {
+  font-family: "Syne";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.blog-text {
+  font-family: "Syne";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.blog a {
+  text-decoration: none;
+  color: rgb(108, 110, 113);
+}
+
+.blog-date {
+  font-family: "Syne";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: rgb(108, 110, 113);
+}
+
+.section {
+  background-color: white;
+}
+
+.sec-heading {
+  font-family: "Syne";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: rgb(15, 18, 28);
+}
+
+.sec-text {
+  font-family: "Syne";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(108, 110, 113);
+}
+
+.reviews i {
+  color: #c77c11;
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.contact h5 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+}
+
+.home h3 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.contact iframe {
+  border-radius: 12px;
+}
+
+.contact input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.contact h5 {
+  margin-bottom: 20px;
+}
+
+.contact .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  background-color: #c77c11;
+  border: 1px solid #c77c11;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact .btn:hover {
+  background-color: #c77c11;
+  border: 1px solid #c77c11;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.267);
+}
+
+footer {
+  background-image: url(./imgs/arkaplan2.jpg);
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .col {
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-heading {
+  font-family: "Syne";
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(15, 18, 28);
+}
+
+footer p {
+  font-family: "Syne";
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(108, 110, 113);
+}
+
+footer a {
+  font-family: "Syne";
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(108, 110, 113);
+  text-decoration: none;
+}
+
+footer a:hover {
+  margin-left: 8px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgb(108, 110, 113);
+  margin: 5px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.social-icon i {
+  font-size: 18px;
+  color: #000;
+}
+
+.social-icon i:hover {
+  font-size: smaller;
+  color: #c77c11;
+}

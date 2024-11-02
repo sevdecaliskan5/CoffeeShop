@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./imgs/logo-coffee.jfif"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
+        <div class="container-fluid">
+          <a class="navbar-brand px-5" href="index.html">
+            <img
+              src="./imgs/logo-coffee.jfif"
+              style="width: 80px; height: 80px; border-radius: 50%"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none d-lg-block" href="#"
+                  ><i class="bi bi-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none d-lg-block" href="#"
+                  ><i class="bi bi-basket"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Welcome to Aromatica!</h3>
+        <h2>Breathtaking Flavors, Unforgettable Experiences</h2>
+        <p>
+          Incredible flavors that always deliver the same taste, along with our
+          expert team, create unforgettable experiences for you.
+        </p>
+        <button class="btn">Get Yours Now!</button>
+      </div>
+    </section>
+
+    <section class="about-us bg-black" id="about-us">
+      <div class="container">
+        <div
+          class="row row-cols-. row-cols-lg-2 align-items-center justify-content-center text-white"
+        >
+          <div class="col">
+            <img src="./imgs/about-uss.jpg" />
+          </div>
+          <div class="col text-center">
+            <h3>Long-Lasting Tradition & True Coffee Love</h3>
+            <p>
+              The longing we feel for different, high-quality coffee and
+              concepts led to the birth of the coffee in Coffee Shop brand. We
+              are very excited about the combination of our thoughtfully
+              designed concept with a historic mansion. Our goal is to offer the
+              best coffee with the right concept to coffee enthusiasts. Coffee
+              Shop was born in a vacant building from the 1800s in the Gaziemir
+              district of Izmir, featuring peaceful workspaces, group gatherings
+              by the fireplace, and a serene garden. Alongside our quality
+              coffees, our croissants, made with special and exquisite Belgian
+              chocolate, have become a brand in the region. Coffee in Coffee
+              Shop is rapidly rising with its high-quality standard coffees,
+              croissants, and special dessert varieties, driven by a unique
+              passion and work discipline.
+            </p>
+            <button class="btn"><a href="#contact">Contact Us</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu bg-black" id="menu">
+      <div class="container">
+        <h3 class="mt-5 mb-5 text-center text-white"><span>OUR </span>MENU</h3>
+        <div class="container d-flex">
+          <i id="prev" class="bi bi-chevron-left"></i>
+          <div
+            class="row row-cols-1 row-cols-md-3 row-cols-lg-5"
+            id="menu-slider"
+          >
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/l1.png" />
+                <div class="layer">
+                  <img src="./imgs/l1.png" />
+                </div>
+                <strong><p>Flat White</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/l2.png" />
+                <div class="layer">
+                  <img src="./imgs/l2.png" />
+                </div>
+                <strong><p>Ristretto Bianco</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/l3.png" />
+                <div class="layer">
+                  <img src="./imgs/l3.png" />
+                </div>
+                <strong><p>Iced Coffee Latte</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/l4.png" />
+                <div class="layer">
+                  <img src="./imgs/l4.png" />
+                </div>
+                <strong><p>Coffee Latte</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/l5.png" />
+                <div class="layer">
+                  <img src="./imgs/l5.png" />
+                </div>
+                <strong><p>Cortado</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/americano.png" />
+                <div class="layer">
+                  <img src="./imgs/americano.png" />
+                </div>
+                <strong><p>Americano</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/iced-americano.png" />
+                <div class="layer">
+                  <img src="./imgs/iced-americano.png" />
+                </div>
+                <strong><p>Iced Americano</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/caramel.png" />
+                <div class="layer">
+                  <img src="./imgs/caramel.png" />
+                </div>
+                <strong><p>Caramel Macchiato</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/caramel-iced.png" />
+                <div class="layer">
+                  <img src="./imgs/caramel-iced.png" />
+                </div>
+                <strong><p>Iced Caramel Macchiato</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/latte-mac.png" />
+                <div class="layer">
+                  <img src="./imgs/latte-mac.png" />
+                </div>
+                <strong><p>Latte Macchiato</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/m1.png" />
+                <div class="layer">
+                  <img src="./imgs/m1.png" />
+                </div>
+                <strong><p>Iced White Chocolate Mocha</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/m2..png" />
+                <div class="layer">
+                  <img src="./imgs/m2..png" />
+                </div>
+                <strong><p>Iced Cafee Mocha</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/m3.png" />
+                <div class="layer">
+                  <img src="./imgs/m3.png" />
+                </div>
+                <strong><p>Caffee Mocha</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/m4.png" />
+                <div class="layer">
+                  <img src="./imgs/m4.png" />
+                </div>
+                <strong><p>White Chocolate Mocha</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/c1.png" />
+                <div class="layer">
+                  <img src="./imgs/c1.png" />
+                </div>
+                <strong><p>Iced Cappuccino</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/c2.png" />
+                <div class="layer">
+                  <img src="./imgs/c2.png" />
+                </div>
+                <strong><p>Cappuccino</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/double.png" />
+                <div class="layer">
+                  <img src="./imgs/double.png" />
+                </div>
+                <strong><p>Doubleshot™ Iced Shaken</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/e1.png" />
+                <div class="layer">
+                  <img src="./imgs/e1.png" />
+                </div>
+                <strong><p>Espresso Macchiato</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/e2.png" />
+                <div class="layer">
+                  <img src="./imgs/e2.png" />
+                </div>
+                <strong><p>Espresso Con Panna</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="./imgs/e3.png" />
+                <div class="layer">
+                  <img src="./imgs/e3.png" />
+                </div>
+                <strong><p>Espresso</p></strong>
+                <p>
+                  110 TL <span><del>130 TL</del></span>
+                </p>
+                <button class="btn btn-group-sm">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <i id="next" class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="heading text-center bg-black text-white">
+      <div class="container">
+        <p>Sizin hikayeniz, bizim taze demlenmiş kahvemiz var.</p>
+        <h3>You have story, we have freshly brewed coffee in Coffee Shop.</h3>
+      </div>
+    </section>
+
+    <section class="video bg-black">
+      <div class="container d-flex">
+        <div class="row align-items-center justify-content-center text-white">
+          <div class="col-md-6">
+            <h3 class="overlay-text">1 EKıMDEN ITIBAREN TUM SUBELERIMIZDE</h3>
+          </div>
+          <div class="col-md-6">
+            <video autoplay loop muted width="100%">
+              <source src="./imgs/Sweet-Spice-Yatay-Final.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews bg-black" id="reviews">
+      <div class="container">
+        <h3 class="mt-5 mb-5 text-center text-white">
+          <span>CUSTOMER'S </span>REVIEWS
+        </h3>
+        <div class="container d-flex">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col">
+              <p class="text-light">
+                Güleryüzlu bir ekip ve aile yeriniz gibi hissedebileceğiniz bir
+                cafe. Ayrıca çok özel çıtır ve sıcak çikolata soslu kruvasani
+                efsane teşekkürler.
+              </p>
+              <b><p class="fw-bold">Nisa</p></b>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+
+            <div class="col">
+              <p class="text-light">
+                Ortamın sakinliğine hayran kaldım. Çalışanların ve hizmetin
+                gayet olumlu olduğunu gördüm ilgili davranmaları ve kahve
+                önerileri için teşekkürler
+              </p>
+              <b><p class="fw-bold">Ada</p></b>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+
+            <div class="col">
+              <p class="text-light">
+                Tavsiye ederim. Ortam sakin ve güzel. İnsanın içi açılıyor.
+                Rahatlıkla oturabilirsiniz. Kahveleri güzel ama özellikle
+                kruvasanlarını özellikle tavsiye ederim. Taze pişiyor ve meyveli
+                çikolatalı mükemmel bir tadı var. Bir tanesi iki kişiye
+                yetebilir.
+              </p>
+              <b><p class="fw-bold">Begüm</p></b>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+
+            <div class="col">
+              <p class="text-light">
+                Hoş bir dizayna sahip. Self servis. Çalışmak için tercih ettik.
+                Memnun kaldık.
+              </p>
+              <b><p class="fw-bold">Yiğit</p></b>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <p class="blog-heading text-center">BLOG</p>
+      <h3 class="text-center mb-5">BİZDEN HABERLER</h3>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col">
+          <p class="blog-heading">BLOG</p>
+          <a href="#"
+            ><p class="blog-text">
+              Kahve Demleme Teknikleri: Evde Barista Olmanın Sırları
+            </p></a
+          >
+          <p class="blog-date">Eylül 10, 2024 . 0 Comments</p>
+        </div>
+
+        <div class="col">
+          <p class="blog-heading">BLOG</p>
+          <a href="#"
+            ><p class="blog-text">
+              Kahve Kültürünün Evrimi: Geçmişten Günümüze
+            </p></a
+          >
+          <p class="blog-date">Eylül 10, 2024 . 0 Comments</p>
+        </div>
+
+        <div class="col">
+          <p class="blog-heading">BLOG</p>
+          <a href="#"
+            ><p class="blog-text">
+              Kahve Tadım Rehberi: Profesyonel Tadım Nasıl Yapılır?
+            </p></a
+          >
+          <p class="blog-date">Eylül 10, 2024 . 0 Comments</p>
+        </div>
+
+        <div class="col">
+          <p class="blog-heading">BLOG</p>
+          <a href="#"
+            ><p class="blog-text">
+              Kahve ve Sağlık: Kafein Tüketiminin Faydaları ve Zararları
+            </p></a
+          >
+          <p class="blog-date">Eylül 10, 2024 . 0 Comments</p>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="section">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col d-flex">
+            <div class="col-icon">
+              <img src="./imgs/taze.jpg" width="80px" />
+            </div>
+            <div class="col-content">
+              <p class="sec-heading">Her Zaman Taze</p>
+              <p class="sec-text">Benzersiz kahve deneyimi yaşayın.</p>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="col-icon">
+              <img src="./imgs/beans.jpg" width="80px" />
+            </div>
+            <div class="col-content">
+              <p class="sec-heading">Çeşitli Çekirdek Türleri</p>
+              <p class="sec-text">
+                Damak zevkinize en uygun kahve için çalışıyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="col-icon">
+              <img src="./imgs/guler-yuz.jpg" width="80px" />
+            </div>
+            <div class="col-content">
+              <p class="sec-heading">Her Zaman Güler Yüzlü</p>
+              <p class="sec-text">
+                Güler yüzlü ve dinamik ekibimiz ile şubelerimizde eşsiz anlara.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex">
+            <div class="col-icon">
+              <img src="./imgs/kahve-makina.jpg" width="80px" />
+            </div>
+            <div class="col-content">
+              <p class="sec-heading">Zengin Menü</p>
+              <p class="sec-text">
+                Her gün aynı kahveden sıkılmamanız için geniş menü
+                seçeneklerimiz ile sizinleyiz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact bg-black text-white" id="contact">
+      <div class="container">
+        <h3 class="mt-5 mb-4 text-center mb-5">CONTACT <span> US</span></h3>
+        <div class="container d-flex">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d100198.70132023067!2d27.089667510630804!3d38.29781554537052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smunchies!5e0!3m2!1str!2str!4v1730537527128!5m2!1str!2str"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col mt-3">
+              <h5>GET IN TOUCH</h5>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Surname" />
+              <input type="text" placeholder="E-mail" />
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-cols-2 row-cols-lg-3">
+          <div class="col mt-3 mb-3">
+            <p class="foot-heading">Genel Merkez</p>
+            <p>Gaziemir/İZMİR</p>
+            <p>info@coffeeshop.com</p>
+          </div>
+          <div class="col mt-3 mb-3">
+            <p class="foot-heading">Hızlı Linkler</p>
+            <a href="#">Ekibimiz</a><br />
+            <a href="#">İş Başvurusu</a><br />
+            <a href="#">Hakkımızda</a><br />
+            <a href="#">Mağazalarımız</a><br />
+            <a href="#">Online Mağaza</a>
+          </div>
+
+          <div class="col d-flex mt-3 mb-3">
+            <div class="social-icon">
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div class="social-icon">
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="social-icon">
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-text text-center align-items-center mt-3">
+          <p>Coffee Shop © 2024. Her hakkı saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
