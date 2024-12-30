@@ -28,7 +28,4 @@ This project includes the design and functionality of a website for a coffee sho
 
 **Responsive Design:** The site uses a responsive design to ensure it works smoothly on all devices.
 
-# Live Demo / Preview
-To get a better understanding of how the website works, check out the screen recording below. It showcases the responsive design, smooth animations, and interactive features of the page in action. Watch the demo to see the project's features in real-time!
-
 ![CoffeeShop-GoogleChrome2024-11-0216-20-17-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/15ba433f-2137-43c0-ae9e-4a5dcb385743)
